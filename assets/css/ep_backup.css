@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+.profile-sta{
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+}
+
+.profile-sta li{
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	padding-right: 20px;
+}
+
+.profile-sta .count{
+	font-weight: 600;
+	font-size: 18px;
+}
+.rev-pack-tit{
+	vertical-align: middle;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.tab-head-bg{
+	background: #5C5A5A;
+	color: #fff;
+	font-size: 16px;
+}
+
+.client-pic{
+	width: 120px;
+	vertical-align: middle!important;
+	
+}
+
+.in-prof{
+	margin-bottom: 5px!important;
+	
+}
+
+.client-pic img{
+	border: #b8b7b6 2px solid;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 3px;
+}
+
+.client-select{
+	 vertical-align: middle!important;
+	text-align: center;
+}
+
+.client-links a{
+	color: #f3cb2a;
+}
+
+.bread-search{
+	width: 100%;
+	display: inline-block;
+	background-color: #fff;
+	border-bottom: 1px solid #d1d4d7;
+	position: relative;
+    margin-bottom: 10px!important;
+	
+}
+
+.search-cont{
+	margin: 15px 0px 0px 0px;
+	padding: 0px 15px 0px 0px;
+}
+
+.search-cont li{
+	display: inline;
+}
+
+.searchinput{
+	border: #DCC7C7 1px solid;
+	padding: 2px 15px;
+}
+
+.search-btn{
+	background: #d1120a;
+	color: #fff;
+	border: none;
+	padding: 3px 10px;
+	border-radius: 0px 5px 5px 0px;
+}
+.search-btn:hover{
+	background: #1D1C1C;
+	
+}
+
+.user-main{
+	padding: 15px;
+}
+
+.user-prof{
+    
+    padding: 10px;
+    margin: 0 -15px;
+    transition: all 0.5s ease 0s;
+	background: #fff;
+}
+.user-prof:hover{ box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.1); }
+.user-prof .user-image{ position: relative; }
+.user-prof .user-image a.image{ display: block; }
+.user-prof .user-image img{
+    width: 100%;
+    height: auto;
+}
+.user-prof .product-links{
+    background: #fff;
+    padding: 10px 0;
+    margin: 0;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.08);
+    list-style: none;
+    opacity: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    transition: all 0.3s ease 0s;
+}
+.user-prof:hover .product-links{ opacity: 1; }
+.user-prof .product-links li{
+    padding: 0 13px;
+    border-right: 1px solid #ebebeb;
+    display: inline-block;
+}
+.user-prof .product-links li:last-child{ border-right: none; }
+.user-prof .product-links li a{
+    color: #222222;
+    font-size: 15px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.user-prof .product-links li a:hover{ color: #cc2121; }
+.user-prof .product-links li a:before,
+.user-prof .product-links li a:after{
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #383838;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 7px 10px 10px 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .15);
+    white-space: nowrap;
+    display: none;
+    transform: translateX(-50%);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transition: all .3s ease 0s;
+}
+.user-prof .product-links li a:after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    transform: translateX(-50%) rotate(45deg);
+    top: -20px;
+}
+.user-prof .product-links li a:hover:before,
+.user-prof .product-links li a:hover:after{
+    display: block;
+}
+.user-prof .product-content{
+    padding: 15px 0;
+    position: relative;
+}
+.user-prof .product-category{
+    color: #929292;
+    font-size: 12px;
+    font-weight: 400;
+    width: calc(100% - 75px);
+    margin: 0 0 5px;
+    display: inline-block;
+}
+.user-prof .product-category a{
+    color: #929292;
+    transition: all .3s ease 0s;
+}
+
+
+.user-prof .rating li.disable{ color: #c4c4c4; }
+.user-prof .title{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.user-prof .title a{
+    color: #292929;
+    transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+.user-prof .product-category a:hover,
+.user-prof .title a:hover{
+    color: #cc2121;
+}
+.user-prof .Cre-date{
+   
+    font-size: 12px;
+    
+}
+@media screen and (max-width: 990px){
+    .user-prof{ margin-bottom: 30px; }
+}
